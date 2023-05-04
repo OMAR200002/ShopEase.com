@@ -1,0 +1,99 @@
+
+<div class="bg-primary-reverse pt-2 pb-2 relative">
+  <div class="container h-3rem flex align-items-center">
+    <div class="flex-grow-1 flex align-items-center">
+      <!--Logo-->
+      <div>
+        <img
+          class="w-15rem logo"
+          src="assets/images/logo.png"
+          alt="">
+      </div>
+      <!--Nav Links-->
+      <ul class="lg:flex list-none links">
+        <li class="mr-2">
+          <a  class="p-3 text-lg text-color"
+             style="cursor: pointer"
+              routerLink="/categories"
+              routerLinkActive="active"
+          >categories</a>
+        </li>
+        <li class="mr-2">
+          <a
+            class="p-3 text-lg text-color"
+            style="cursor: pointer"
+          >Deals</a>
+        </li>
+        <li class="mr-2">
+          <a
+            class="p-3 text-lg text-color"
+            style="cursor: pointer"
+          >Services</a>
+        </li>
+        <li class="mr-2">
+          <a
+            class="p-3 text-lg text-color"
+            style="cursor: pointer"
+          >Delivery</a>
+        </li>
+      </ul>
+    </div>
+    <!--searchField, Account and login buttons-->
+    <div class="md:flex align-items-center navBar-right">
+        <span class="p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input
+              type="text"
+              class="p-inputtext-sm"
+              pInputText
+              [(ngModel)]="searchKeyword" />
+        </span>
+      <a
+        class="flex align-items-center ml-3 text-lg text-color user-icon"
+        style="cursor: pointer"
+      >
+        <i class="pi pi-user mr-2"
+           style="font-size: 1.3rem"></i>
+        Account
+      </a>
+      <a
+        class="flex align-items-center ml-3 text-lg text-color shopping-cart-icon"
+        style="cursor: pointer"
+      >
+        <i class="pi pi-shopping-cart mr-2" style="font-size: 1.3rem"></i>
+        Cart
+      </a>
+    </div>
+    <!--Nav links in small devices-->
+    <p-overlayPanel #op>
+      <div class="flex flex-column links2">
+        <a class="w-screen pt-2 pb-2 text-lg text-color">Categories</a>
+        <a class="w-screen pt-2 pb-2 text-lg text-color">Deals</a>
+        <a class="w-screen pt-2 pb-2 text-lg text-color">What's New</a>
+        <a class="w-screen pt-2 pb-2 text-lg text-color">Delivery</a>
+        <a
+          class="w-screen pt-2 pb-2 text-lg text-color"
+        >
+          <i class="pi pi-user mr-2"
+             style="font-size: 1.3rem"></i>
+          Account
+        </a>
+        <a
+          class="w-screen pt-2 pb-2 text-lg text-color"
+          style="cursor: pointer"
+        >
+          <i class="pi pi-shopping-cart mr-2" style="font-size: 1.3rem"></i>
+          Cart
+        </a>
+      </div>
+    </p-overlayPanel>
+    <a (click)="op.toggle($event)">
+      <i
+        class="pi pi-bars lg:hidden text-color md:ml-4"
+        style="font-size: 2rem;
+          cursor: pointer;
+        "></i>
+    </a>
+  </div>
+</div>
+

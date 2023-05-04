@@ -1,0 +1,26 @@
+.product-image img {
+  transition: .3s all linear;
+}
+.product-image img:hover{
+  transform: scale(1.1);
+  opacity: .9;
+}
+.heart-icon i,
+.shopping-cart-icon i {
+  transition: .3s all linear;
+  cursor: pointer;
+}
+.heart-icon {
+  top: 15px;
+  left: 15px;
+}
+.shopping-cart-icon {
+  top: 15px;
+  right: 15px;
+}
+.heart-icon:hover i,
+.shopping-cart-icon:hover i
+{
+  color: white;
+}
+

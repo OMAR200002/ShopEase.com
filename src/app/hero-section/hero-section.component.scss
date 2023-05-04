@@ -1,0 +1,44 @@
+.container { margin-left: auto; margin-right: auto; }
+.hero-section {
+  height: calc(100vh - 35px - 56px);
+}
+.hero-section .container{
+  height: calc(100vh - 150px);
+}
+.go-down {
+  position: absolute;
+  bottom: 30px;
+  left: 48%;
+  animation: bouncing 2s infinite alternate;
+}
+@keyframes bouncing {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40%,
+  60% {
+    transform: translateY(-20px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hero-section-img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container { max-width: 740px; }
+}
+@media only screen and (min-width: 992px) { .container { max-width: 980px; } }
+@media only screen and (min-width: 1200px) { .container { max-width: 1140px; } }
+@media only screen and (min-width: 1400px) { .container { max-width: 1320px; } }

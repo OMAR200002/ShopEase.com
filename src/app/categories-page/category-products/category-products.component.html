@@ -1,0 +1,7 @@
+<div class="col-12 grid m-0 md:pl-0 pr-3">
+<div
+  *ngFor="let product of products;let i = index"
+  class="lg:col-4 md:col-6 mb-4 lg:mb-0">
+  <app-product [product]="product"></app-product>
+</div>
+</div>

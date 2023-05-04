@@ -1,0 +1,33 @@
+<div class="product-card bg-white shadow-1 border-round-2xl overflow-hidden">
+  <div class="product-image relative h-15rem">
+    <span class="heart-icon bg-white hover:bg-indigo-300 p-2 border-circle absolute flex align-items-center justify-content-center z-5">
+      <i class="pi pi-heart" style="font-size: 1.5rem"></i>
+    </span>
+    <span class="shopping-cart-icon bg-white hover:bg-indigo-300 p-2 border-circle absolute flex align-items-center justify-content-center z-5">
+      <i class="pi pi-shopping-cart" style="font-size: 1.5rem"></i>
+    </span>
+    <img
+      class="w-full h-full max-w-full max-h-full"
+      [src]="product.thumbnail"/>
+  </div>
+  <div class="card-content p-3">
+    <div class="flex justify-content-between">
+      <p class="text-2xl font-semibold text-black-alpha-90 mb-0">{{product.title}}</p>
+      <p class="text-2xl font-semibold text-indigo-500" >{{product.price}}$</p>
+    </div>
+    <div class="product-rate mb-2 mt-1">
+      <i class="pi pi-star-fill mr-1 text-indigo-300 text-lg"></i>
+      <i class="pi pi-star-fill mr-1 text-indigo-300 text-lg"></i>
+      <i class="pi pi-star-fill mr-1 text-indigo-300 text-lg"></i>
+      <i class="pi pi-star-fill mr-1 text-indigo-300 text-lg"></i>
+      <i class="pi pi-star text-lg"></i>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita fugiat iusto odio optio praesentium sed! A cum facilis nobis sit tenetur? Animi assumenda cupiditate dolore ea, ipsa nulla rerum!</p>
+    <div class="flex">
+      <!--add to cart-->
+      <p-button class="mr-4" label="Add to cart" styleClass="p-button-raised"></p-button>
+      <!--learn more-->
+      <p-button label="Learn more" styleClass="p-button-outlined"></p-button>
+    </div>
+  </div>
+</div>

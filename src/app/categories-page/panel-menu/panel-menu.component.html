@@ -1,0 +1,16 @@
+<div class="">
+     <p-carousel
+       [value]="categories"
+       [numVisible]="4"
+       [numScroll]="1"
+       [responsiveOptions]="responsiveOptions"
+       >
+       <ng-template let-category pTemplate="item">
+           <a
+             [routerLink]="['/categories',category.title]"
+             routerLinkActive="active"
+             class="p-6 pt-2 pb-2 mr-3 border-round-3xl text-lg font-semibold category-btn text-center"
+           >{{category.title}}</a>
+       </ng-template>
+     </p-carousel>
+</div>

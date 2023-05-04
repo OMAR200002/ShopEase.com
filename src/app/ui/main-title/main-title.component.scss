@@ -1,0 +1,22 @@
+.main-title {
+  position: relative;
+}
+
+.main-title::after,
+.main-title::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: rgb(50,111,209);
+  bottom: -15px;
+}
+
+.main-title::before {
+  background: linear-gradient(90deg, rgba(50,111,209,1) 35%, rgba(237,237,237,0) 100%);
+  left: 50%;
+}
+.main-title::after {
+  background: linear-gradient(260deg, rgba(50,111,209,1) 35%, rgba(237,237,237,0) 100%);
+  right: 50%;
+}

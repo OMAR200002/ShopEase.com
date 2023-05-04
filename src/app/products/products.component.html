@@ -1,0 +1,13 @@
+<div class="container pt-8 pb-8">
+  <app-main-title
+  normalText="Today's"
+  coloredText="Best Deals for you!"
+  ></app-main-title>
+  <div class="grid mt-6 pl-3 pr-3">
+    <div
+      *ngFor="let product of products;let i = index"
+      class="lg:col-4 md:col-6 mb-4 lg:mb-0">
+      <app-product [product]="product"></app-product>
+    </div>
+  </div>
+</div>

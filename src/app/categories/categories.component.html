@@ -1,0 +1,22 @@
+<div class="bg-white pt-8 pb-8">
+  <div class="container">
+    <app-main-title
+    normalText="Browse Our Wide Range of Products"
+    coloredText="by Category"
+    ></app-main-title>
+   <div class="mt-4">
+     <p-carousel
+       [value]="categories"
+       [numVisible]="3"
+       [numScroll]="1"
+       [responsiveOptions]="responsiveOptions">
+       <ng-template let-category pTemplate="item">
+         <div class="p-2 lg:p-4">
+           <app-category [category]="category"></app-category>
+         </div>
+       </ng-template>
+     </p-carousel>
+   </div>
+  </div>
+</div>
+

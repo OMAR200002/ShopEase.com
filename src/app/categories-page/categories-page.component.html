@@ -1,0 +1,41 @@
+<div class="bg-white">
+  <div class="container grid justify-content-between pt-6">
+    <!--Gallery-->
+    <div class="col-12">
+      <div class="grid">
+        <div class="col-12 md:col-8 p-0 h-30rem border-round-md overflow-hidden relative box1">
+          <div class="absolute top-50 box1-content ml-4 mr-4 md:ml-6">
+            <h2 class="col-12 text-white p-0 mb-2">NEW SMART VR</h2>
+            <p class="text-white-alpha-70 line-height-3">Step into a world of immersive reality with our cutting-edge VR product, where every experience is brought to life like never before.</p>
+            <p-button label="Shop Now" styleClass="p-button-help"></p-button>
+          </div>
+          <img
+            class="w-full h-full"
+            src="assets/images/categories_page/img_1.jpg"
+            alt="">
+        </div>
+        <div class="hidden md:block col-4 pl-3 p-0 h-30rem">
+          <div class="box-2 h-14rem mb-5 border-round-md overflow-hidden">
+            <img
+              class="w-full h-full"
+              src="assets/images/categories_page/img_2.jpg"
+              alt="">
+          </div>
+          <div class="box-3 h-14rem border-round-md overflow-hidden">
+            <img
+              class="w-full h-full"
+              src="assets/images/categories_page/img_3.jpg"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="font-bold text-3xl">Today's Best Deals for you!</p>
+    <!--Buttons to choose category-->
+    <div class="col-12 pl-0 text-black-alpha-90">
+      <app-panel-menu></app-panel-menu>
+    </div>
+    <!--Chosen category products-->
+      <router-outlet></router-outlet>
+  </div>
+</div>
